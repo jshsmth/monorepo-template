@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "build:apps": "npx lerna run build",
-    "start:example": "npm run build:apps && npx lerna run dev --scope example_repo"
+    "start:app:dev": "npx lerna run dev --scope example_repo",
+    "start:app:preview": "npm run build:apps && npx lerna run preview --scope example_repo"
   },
   "dependencies": {},
   "devDependencies": {
