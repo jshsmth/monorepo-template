@@ -1,5 +1,10 @@
 import './App.css'
-import { Button } from 'reactissimo/dist'
+import 'reactissimo/styles'
+
+import { Button } from 'reactissimo'
+
+
+
 
 function App() {
 

@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
+      formats: ['es'],
       entry: './src/index.ts',
-      name: 'Reactissimo',
       fileName: 'reactissimo'
     },
     rollupOptions: {
