@@ -2,9 +2,6 @@
   "name": "reactissimo",
   "private": true,
   "version": "1.0.0",
-  "main": "dist/reactissimo.umd.cjs",
-  "module": "dist/reactissimo.js",
-  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "clean": "rm -rf dist",
@@ -17,10 +14,18 @@
   },
   "directories": {
     "src": "src"
-  },
+  }, 
   "files": [
     "src"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/reactissimo.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/style.css"
+
+  },
   "dependencies": {
     "@headlessui/react": "^2.0.0-alpha.4",
     "clsx": "^2.1.0",
